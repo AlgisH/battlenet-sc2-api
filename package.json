@@ -1,0 +1,22 @@
+{
+  "name": "sc2-api",
+  "version": "1.0.0",
+  "description": "Wrapper for the StarCraft 2 battle.net API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlgisH/sc2-API.git"
+  },
+  "author": "lagis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlgisH/sc2-API/issues"
+  },
+  "homepage": "https://github.com/AlgisH/sc2-API#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
