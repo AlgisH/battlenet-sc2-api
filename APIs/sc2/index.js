@@ -1,5 +1,6 @@
 const profile = require('./profile')
 const ladders = require('./ladders')
+const resources = require('./resources')
 
 let configs = {}
 const defaults = {
@@ -22,5 +23,6 @@ module.exports = {
 
 	profile,
 	ladders,
+	resources,
 }
 

@@ -8,6 +8,10 @@ module.exports = {
 	},
 
 	get: (ladderId) => {
-		return API.get(`${params.baseUrl}/ladder/${ladderId}/`)
+		return new Promise((resolve, reject) => {
+			API.get(`${params.baseUrl}/ladder/${ladderId}/`)
+				.then(result => resolve(result.data))
+				.catch(error => reject(error))
+		})
 	},
 }
