@@ -2,13 +2,19 @@ const API = require('./APIs')
 const ax = require('./utils/axios')
 const axios = require('axios')
 
-let API_KEY
+class BnetApi {
 
-module.exports = {
-	init: (apiKey) => {
-		API_KEY = apiKey
-		API.init(API_KEY)
-	},
+	constructor(apiKey) {
+		if (!apiKey)
+			throw new Error('No API key provided !')
 
-	...API
+		const modules = API.init(apiKey)
+
+		// Find better way to dynamically add modules
+		this.sc2 = modules.sc2
+	}
+
 }
+
+
+module.exports = BnetApi

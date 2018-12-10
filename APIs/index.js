@@ -15,10 +15,12 @@ module.exports = {
 		}
 
 		axios.setDefaultParams(configs)
-		
-		initModules(axios)
-	},
-	sc2,
 
+		initModules(axios)
+
+		return {
+			sc2
+		}
+	},
 }
 

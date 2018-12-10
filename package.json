@@ -1,5 +1,5 @@
 {
-  "name": "sc2-api",
+  "name": "battlenet-sc2-api",
   "version": "1.0.0",
   "description": "Wrapper for the StarCraft 2 battle.net API",
   "main": "index.js",
