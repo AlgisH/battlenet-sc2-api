@@ -1,0 +1,3 @@
+# Setup instructions:
+
+npm install

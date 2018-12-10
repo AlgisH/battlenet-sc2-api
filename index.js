@@ -1,7 +1,14 @@
+const API = require('./APIs')
+const ax = require('./utils/axios')
 const axios = require('axios')
 
-const API_KEY = "pwa3qvnj8bhr2fsrv7utyqpbz3csmf9c"
+let API_KEY
 
+module.exports = {
+	init: (apiKey) => {
+		API_KEY = apiKey
+		API.init(API_KEY)
+	},
 
-
-console.log('running...')
+	...API
+}
