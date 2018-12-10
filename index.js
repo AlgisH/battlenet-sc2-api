@@ -1,5 +1,5 @@
-const API = require('./APIs')
-const ax = require('./utils/axios')
+const API = require('./lib/APIs')
+const ax = require('./lib/utils/axios')
 const axios = require('axios')
 
 class BnetApi {

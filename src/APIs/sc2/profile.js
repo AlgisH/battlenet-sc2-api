@@ -7,7 +7,7 @@ module.exports = {
 		params = apiParams
 	},
 
-	get: async (userId, username, region = 1) => {
+	get: (userId, username, region = 1) => {
 		return new Promise((resolve, reject) => {
 			API.get(`${params.baseUrl}/profile/${userId}/${region}/${username}/`)
 				.then(result => resolve(result.data))
@@ -15,7 +15,7 @@ module.exports = {
 		})
 	},
 
-	ladders: async (userId, username, region = 1) => {
+	ladders: (userId, username, region = 1) => {
 		return new Promise((resolve, reject) => {
 			API.get(`${params.baseUrl}/profile/${userId}/${region}/${username}/ladders`)
 				.then(result => resolve(result.data))
@@ -23,7 +23,7 @@ module.exports = {
 		})
 	},
 
-	matchHistory: async (userId, username, region = 1) => {
+	matchHistory: (userId, username, region = 1) => {
 		return new Promise((resolve, reject) => {
 			API.get(`${params.baseUrl}/profile/${userId}/${region}/${username}/matches`)
 				.then(result => resolve(result.data))
